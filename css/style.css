@@ -1,0 +1,413 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Asul Regular';
+    src: url('../media/asul-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../media/roboto-regular.ttf') format('truetype');
+}
+
+body {
+    background: #262626 url("../media/dksam.png") repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+nav, footer, h1, .box, .modBox {
+    background-color: rgba(25, 25, 25, 0.66);
+}
+
+h1, .box, .modBox, .frontBox img, .thumbs {
+    border-radius: 6px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+header, footer {
+    width: 100%;
+    flex-grow: 0;
+    font-family: 'Roboto Regular', sans-serif;
+}
+
+nav {
+    width: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 10px 0px;
+    font-size: 0.6875em;
+    text-transform: uppercase;
+}
+
+.left {
+    float: left;
+    padding-left: 10px;
+}
+
+.right {
+    float: right;
+    padding-right: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+}
+
+.foot-br {
+    display: none;
+}
+
+
+/* CONTENT */
+
+.content {
+    padding: 50px 0px;
+    width: 100%;
+    flex-grow: 1;
+    line-height: 150%;
+}
+
+main {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+h1, .box, .modBox {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.modBox:last-child {
+    margin-bottom: 0px;
+}
+
+.modBox:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modBox img {
+    margin-right: 12px;
+    float: left;
+    display: block;
+}
+
+.modInfo {
+    overflow: hidden;
+}
+
+h2, p {
+    margin-bottom: 12px;
+    /* border: 1px solid orange; */
+}
+
+p:last-child {
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-family: 'Asul Regular', serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+a[href*="nexusmods.com"] {
+    margin-left: -2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.thumbs {
+    width: 14em;
+    border: 2px solid white;
+}
+
+.thumbs {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.thumbs:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    box-shadow: 0px 3px red;
+}
+
+.frontBox {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    word-spacing: 20px;
+}
+
+.frontBox img {
+    width: 30%;
+}
+
+.frontBox img:hover {
+    box-shadow: 0px 3px red;
+}
+
+.backTop {
+    text-align: center;
+    background: none;
+}
+
+
+/* CONTACT FORM */
+
+fieldset {
+    width: 40%;
+    margin: 0px auto;
+    padding: 10px;
+    border: none;
+}
+
+fieldset > div {
+    margin-bottom: 15px;
+}
+
+fieldset > div:last-of-type {
+    margin-bottom: 8px;
+}
+
+label {
+    margin-left: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid red;
+    color: white;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+/* input:focus, textarea:focus {
+    box-shadow: 0px 3px 3px red;
+} */
+
+#submit {
+    width: 5em;
+    padding: 4px;
+    float: right;
+}
+
+#submit:hover, #submit:active {
+    background-color: red;
+    color: black;
+}
+
+#submit:active {
+    background-color: black;
+    border-bottom: 2px solid red;
+    color: white;
+}
+
+
+/* ALL LINKS */
+
+a {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+main a:link {
+    color: red;
+}
+
+main a:visited {
+    color: silver;
+}
+
+main a:hover {
+    color: black;
+    background-color: red;
+    border-bottom: 2px solid red;
+}
+
+main a:active {
+    color: white;
+    background-color: black;
+    border-bottom: 2px solid red;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: black;
+    background-color: red;
+    border-bottom: 2px solid red;
+}
+
+nav a:active, .selected {
+    color: white;
+    background-color: black;
+    border-bottom: 2px solid red;
+}
+
+.frontBox a, .frontBox a:hover, .backTop a, .backTop a:hover {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+p a {
+    padding: 2px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 770px) {
+    fieldset {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .left {
+        float: none;
+        padding-left: 0px;
+    }
+    
+    .right {
+        float: none;
+        padding-right: 0px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .frontBox img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav ul {
+        padding: 10px;
+        line-height: 150%;
+    }
+    
+    nav li {
+        display: block;
+    }
+    
+    nav li a {
+        padding: 2px 5px;
+    }
+
+    nav a:hover {
+        color: black;
+        background-color: red;
+        border-bottom: none;
+    }
+    
+    nav a:active, .selected {
+        color: white;
+        background-color: black;
+        border-left: 2px solid red;
+        border-bottom: none;
+    }
+
+    .foot-br {
+        display: inline;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .thumbs {
+        width: 100%;
+    }
+
+    .modBox img {
+        margin-right: 0px;
+        margin-bottom: 10px;
+        float: none;
+    }
+    
+    .modInfo {
+        overflow: visible;
+    }    
+
+    fieldset {
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width: 340px) {
+    h1 {
+        font-size: 1em;
+    }
+}
+
